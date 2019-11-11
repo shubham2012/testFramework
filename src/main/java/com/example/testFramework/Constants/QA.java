@@ -8,7 +8,7 @@ public class QA implements EnvironmentMaster {
     private static Map<Service,String> map = new HashMap<>();
 
     private static Map<Service, String> getMap() {
-        map.put(Service.TEMP,"http://lms.scmqa.myntra.com/service");
+        map.put(Service.TEST,"https://postman-echo.com");
         return map;
     }
 

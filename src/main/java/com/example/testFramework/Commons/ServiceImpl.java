@@ -19,11 +19,13 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
+import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.util.Map;
 
 @Slf4j
+@Component
 public abstract class ServiceImpl {
 
     protected  <T> T get(Service service, String url, Map<String, String> headers, Class<T> responseClass){

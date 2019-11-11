@@ -8,7 +8,7 @@ import com.example.testFramework.Constants.QA;
 
 public class EnvFactory {
 
-    public EnvironmentMaster getCurrentEnv(){
+    public static EnvironmentMaster getCurrentEnv(){
 
         Env currEnv = Environment.getEnvironment();
         switch (currEnv){
