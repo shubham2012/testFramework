@@ -1,14 +1,16 @@
 package com.example.testFramework.Helper;
 
 import com.example.testFramework.Commons.ServiceImpl;
-import com.example.testFramework.Commons.Utils;
 import com.example.testFramework.Constants.Service;
 import com.example.testFramework.Constants.URI;
+import io.restassured.response.Response;
 
-public class PostmanService extends ServiceImpl {
+public class CommonServiceHelper extends ServiceImpl {
 
-    public String getResponse(){
-        String result = getString(Service.TEST, URI.get, Utils.jsonHeader());
+    public Response getResponse(){
+        Response result = get(Service.POSTMAN, URI.get);
         return result;
     }
+
+
 }

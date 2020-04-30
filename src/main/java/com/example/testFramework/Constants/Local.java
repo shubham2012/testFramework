@@ -8,7 +8,7 @@ public class Local implements EnvironmentMaster {
     private static Map<Service,String> map = new HashMap<>();
 
     private static Map<Service, String> getMap() {
-        map.put(Service.TEST,"http://localhost:7060/service/");
+        map.put(Service.POSTMAN, "https://postman-echo.com");
         return map;
     }
 
